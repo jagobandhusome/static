@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<script type="65e21cf3d61129d9d351874f-text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+<script type="65e21cf3d61129d9d351874f-text/javascript">var et_site_url='https://static.apro-software.com';var et_post_id='238233';function et_core_page_resource_fallback(a,b){"undefined"===typeof b&&(b=a.sheet.cssRules&&0===a.sheet.cssRules.length);b&&(a.onerror=null,a.onload=null,a.href?a.href=et_site_url+"/?et_core_page_resource="+a.id+et_post_id:a.src&&(a.src=et_site_url+"/?et_core_page_resource="+a.id+et_post_id))}
+</script><meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+<title>Machine Learning Guide for Newbies - APRO Software</title>
+<meta name="description" content="Concepts like machine learning and artificial intelligence sound weird and mysterious? No worries! I will accompany you to discover it in this post.">
+
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Machine Learning Guide for Newbies - APRO Software">
+<meta property="og:description" content="Concepts like machine learning and artificial intelligence sound weird and mysterious? No worries! I will accompany you to discover it in this post.">
+<meta property="og:url" content="https://static.apro-software.com/machine-learning-for-newbies/">
+<meta property="og:site_name" content="APRO Software">
+<meta property="article:published_time" content="2020-07-27T17:20:47+00:00">
+<meta property="article:modified_time" content="2021-04-26T11:22:45+00:00">
+<meta property="og:image" content="https://static.apro-software.com/wp-content/uploads/2020/07/machine-learning.jpg">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="720">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:label1" content="Written by">
+<meta name="twitter:data1" content="Andrea Di Stefano">
+<meta name="twitter:label2" content="Est. reading time">
+<meta name="twitter:data2" content="21 minutes">
+<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://static.apro-software.com/#website","url":"https://static.apro-software.com/","name":"APRO Software","description":"Custom Application & Software Development Company","potentialAction":[{"@type":"SearchAction","target":"https://static.apro-software.com/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://static.apro-software.com/machine-learning-for-newbies/#primaryimage","inLanguage":"en-US","url":"https://static.apro-software.com/wp-content/uploads/2020/07/machine-learning.jpg","contentUrl":"https://static.apro-software.com/wp-content/uploads/2020/07/machine-learning.jpg","width":1280,"height":720,"caption":"machine learning"},{"@type":"WebPage","@id":"https://static.apro-software.com/machine-learning-for-newbies/#webpage","url":"https://static.apro-software.com/machine-learning-for-newbies/","name":"Machine Learning Guide for Newbies - APRO Software","isPartOf":{"@id":"https://static.apro-software.com/#website"},"primaryImageOfPage":{"@id":"https://static.apro-software.com/machine-learning-for-newbies/#primaryimage"},"datePublished":"2020-07-27T17:20:47+00:00","dateModified":"2021-04-26T11:22:45+00:00","author":{"@id":"https://static.apro-software.com/#/schema/person/0488db61b9398000eba57181406fad78"},"description":"Concepts like machine learning and artificial intelligence sound weird and mysterious? No worries! I will accompany you to discover it in this post.","breadcrumb":{"@id":"https://static.apro-software.com/machine-learning-for-newbies/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://static.apro-software.com/machine-learning-for-newbies/"]}]},{"@type":"BreadcrumbList","@id":"https://static.apro-software.com/machine-learning-for-newbies/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://static.apro-software.com/","url":"https://static.apro-software.com/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@id":"https://static.apro-software.com/machine-learning-for-newbies/#webpage"}}]},{"@type":"Person","@id":"https://static.apro-software.com/#/schema/person/0488db61b9398000eba57181406fad78","name":"Andrea Di Stefano","sameAs":["https://static.apro-software.com"]}]}</script>
+
+<link href="https://fonts.gstatic.com" crossorigin rel="preconnect">
+
+
+<link rel="stylesheet" id="wp-block-library-css" href="https://static.apro-software.com/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="custom_style_css-css" href="https://static.apro-software.com/wp-content/plugins/divi-overlays/assets/css/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="et_monarch-css-css" href="https://static.apro-software.com/wp-content/plugins/monarch/css/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="chld_thm_cfg_parent-css" href="https://static.apro-software.com/wp-content/themes/Divi/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="divi-style-css" href="https://static.apro-software.com/wp-content/themes/Apro-Divi-child-si/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="dashicons-css" href="https://static.apro-software.com/wp-includes/css/dashicons.min.css" type="text/css" media="all">
+<style id="rocket-lazyload-inline-css" type="text/css">
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;cursor:pointer;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:72px;width:72px;left:50%;top:50%;margin-left:-36px;margin-top:-36px;position:absolute;background:url(https://static.apro-software.com/wp-content/plugins/wp-rocket/assets/img/youtube.png) no-repeat;cursor:pointer}
+</style>
+<script type="65e21cf3d61129d9d351874f-text/javascript" src="https://static.apro-software.com/wp-content/plugins/jquery-manager/assets/js/jquery-3.5.1.min.js" id="jquery-core-js"></script>
+<script type="65e21cf3d61129d9d351874f-text/javascript" src="https://static.apro-software.com/wp-content/plugins/jquery-manager/assets/js/jquery-migrate-3.3.0.min.js" id="jquery-migrate-js"></script>
+<script type="65e21cf3d61129d9d351874f-text/javascript" src="https://static.apro-software.com/wp-content/plugins/divi-overlays/assets/js/snap.svg-min.js" id="snap_svg_js-js"></script>
+
+
+
+
+
+<style type="text/css" id="et-social-custom-css">
+				 
+			</style><link rel="preload" href="https://static.apro-software.com/wp-content/themes/Divi/core/admin/fonts/modules.ttf" as="font" crossorigin="anonymous"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<script type="65e21cf3d61129d9d351874f-text/javascript">
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+</script>
+
+<script type="65e21cf3d61129d9d351874f-text/javascript">
+  fbq('init', '2411424602480983', {}, {
+    "agent": "wordpress-5.7.2-3.0.5"
+});
+</script><script type="65e21cf3d61129d9d351874f-text/javascript">
+  fbq('track', 'PageView', []);
+</script>
+
+<noscript>
+<img height="1" width="1" style="display:none" alt="fbpx" src="https://www.facebook.com/tr?id=2411424602480983&ev=PageView&noscript=1">
+</noscript>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-65090215-1" type="65e21cf3d61129d9d351874f-text/javascript"></script>
+<script type="65e21cf3d61129d9d351874f-text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-65090215-1');
+  gtag('config', 'AW-951083042');
+</script>
+<script src="//code.tidio.co/xjolnlebnrurstl1xnfepu1n0jmusvqh.js" async type="65e21cf3d61129d9d351874f-text/javascript"></script><link rel="icon" href="https://static.apro-software.com/wp-content/uploads/2018/03/cropped-only-logo-60x60-32x32.png" sizes="32x32">
+<link rel="icon" href="https://static.apro-software.com/wp-content/uploads/2018/03/cropped-only-logo-60x60-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://static.apro-software.com/wp-content/uploads/2018/03/cropped-only-logo-60x60-180x180.png">
+<meta name="msapplication-TileImage" content="https://static.apro-software.com/wp-content/uploads/2018/03/cropped-only-logo-60x60-270x270.png">
+<style id="et-core-unified-238233-cached-inline-styles">body{color:#000000}h1,h2,h3,h4,h5,h6{color:#000000}#footer-widgets .footer-widget a,#footer-widgets .footer-widget li a,#footer-widgets .footer-widget li a:hover{color:#ffffff}.footer-widget{color:#ffffff}.et_slide_in_menu_container,.et_slide_in_menu_container .et-search-field{letter-spacing:px}.et_slide_in_menu_container .et-search-field::-moz-placeholder{letter-spacing:px}.et_slide_in_menu_container .et-search-field::-webkit-input-placeholder{letter-spacing:px}.et_slide_in_menu_container .et-search-field:-ms-input-placeholder{letter-spacing:px}@media only screen and (min-width:1350px){.et_pb_row{padding:27px 0}.et_pb_section{padding:54px 0}.single.et_pb_pagebuilder_layout.et_full_width_page .et_post_meta_wrapper{padding-top:81px}.et_pb_fullwidth_section{padding:0}}	h1,h2,h3,h4,h5,h6{font-family:'Montserrat',sans-serif}body,input,textarea,select{font-family:'Montserrat',sans-serif}div#custom-row .et_pb_column_4_4 .et_pb_grid_item:nth-child(4n+1){clear:none!important}div#custom-row.et_pb_gutters1 .et_pb_column_4_4 .et_pb_grid_item{width:16.500%!important}div#custom-row .et_pb_portfolio_item a{pointer-events:none!important}#custom-row .et_pb_portfolio_grid .et_pb_portfolio_item img{width:auto}#custom-row{text-align:center}@media (max-width:767px){#div#custom-row .et_gallery_item:nth-child(2n+1),.et_pb_column .et_pb_grid_item:nth-child(2n+1){clear:none!important}div#custom-row.et_pb_gutters1 .et_pb_column_4_4 .et_pb_grid_item{width:16.5%!important}}.et_pb_post .entry-featured-image-url{float:left;width:30%;margin-right:25px}.et_pb_column_4_4 .fade .et_pb_grid_item:nth-child(4n){top:9px;position:relative}.et_pb_posts a.more-link{float:right}@media screen and (max-width:980px){.custom-row{width:100%!important}.custom-row td{padding:0!important;font-size:13px!important;line-height:24px!important}.custom-row td:first-child{padding-left:5px!important}}@media screen and (max-width:980px){.single-post h1,.single-post h2,.single-post h3,.single-post h4,.single-post h5,.single-post h6{line-height:1.3em!important}}.custom-mobile-spacing .et_pb_fullwidth_header_container{width:100%!important}.et_pb_post a{text-decoration:underline}.et_pb_post h2 a{text-decoration:none}.et_pb_row p a{text-decoration:underline}.et_pb_text_inner a{text-decoration:underline}.mobile_menu_bar:before{color:#edb059!important}.et_mobile_menu{border-top:3px solid #edb059!important}.contact-button{background-color:#39c95e;padding:0!important;border-radius:5px;text-align:center!important}.contact-button a{color:#fff!important;padding:10px 15px!important}.contact-button:hover{background-color:#2ab04c}.services-sub-menu a{font-size:14px!important;border-top:1px solid #e88e20;padding:10px 5px!important}.submenu-arrow{color:#e88e20!important}.sub-menu{border-left:1px solid #e88e20!important;border-right:1px solid #e88e20!important;border-bottom:1px solid #e88e20!important;border-top:0!important;padding-bottom:0!important;padding-top:0!important}#footer-bottom .et-social-icon a{color:#edb059}#footer-bottom .et-social-icon a:hover{color:#ac8145}</style><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
+<body class="post-template-default single single-post postid-238233 single-format-standard et_monarch et_pb_button_helper_class et_fixed_nav et_show_nav et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_pb_pagebuilder_layout et_full_width_page et_divi_theme et-db et_minified_js et_minified_css">
+<div id="page-container">
+<header id="main-header" data-height-onload="66">
+<div class="container clearfix et_menu_container">
+<div class="logo_container">
+<span class="logo_helper"></span>
+<a href="https://static.apro-software.com/">
+<img src="https://static.apro-software.com/wp-content/uploads/2018/03/apro-logo_colour-300px.png" alt="APRO Software" id="logo" data-height-percentage="54">
+</a>
+</div>
+<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+<nav id="top-menu-nav">
+<ul id="top-menu" class="nav"><li id="menu-item-205505" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-205505"><a href="https://static.apro-software.com/">Home</a></li>
+<li id="menu-item-205514" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-205514"><a href="https://static.apro-software.com/services/">Services</a>
+<ul class="sub-menu">
+<li id="menu-item-233833" class="services-sub-menu ai-service menu-item menu-item-type-custom menu-item-object-custom menu-item-233833"><a href="https://static.apro-software.com/artificial-intelligence-development-services/"><span class="submenu-arrow">></span> Artificial Intelligence</a></li>
+<li id="menu-item-233834" class="services-sub-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-233834"><a href="https://static.apro-software.com/mobile-apps-development-company/"><span class="submenu-arrow">></span> Mobile Applications</a></li>
+<li id="menu-item-233835" class="services-sub-menu web-service menu-item menu-item-type-custom menu-item-object-custom menu-item-233835"><a href="https://static.apro-software.com/web-development-services/"><span class="submenu-arrow">></span> Web Applications</a></li>
+</ul>
+</li>
+<li id="menu-item-205516" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-205516"><a href="https://static.apro-software.com/about-us/">About Us</a></li>
+<li id="menu-item-205527" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-205527"><a href="https://static.apro-software.com/case-studies/">Case Studies</a></li>
+<li id="menu-item-205526" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-205526"><a href="https://static.apro-software.com/blog/">Blog</a></li>
+<li id="menu-item-205528" class="contact-button menu-item menu-item-type-post_type menu-item-object-page menu-item-205528"><a href="https://static.apro-software.com/contact/">Request Consultation</a></li>
+</ul> </nav>
+<div id="et_top_search">
+<span id="et_search_icon"></span>
+</div>
+<div id="et_mobile_nav_menu">
+<div class="mobile_nav closed">
+<span class="select_page">Select Page</span>
+<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+</div>
+</div> </div> 
+</div> 
+<div class="et_search_outer">
+<div class="container et_search_form_container">
+<form role="search" method="get" class="et-search-form" action="https://static.apro-software.com/">
+<input type="search" class="et-search-field" placeholder="Search …" value="" name="s" title="Search for:"> </form>
+<span class="et_close_search_field"></span>
+</div>
+</div>
+</header> 
+<div id="et-main-area">
+<div id="main-content">
+<div class="container">
+<div id="content-area" class="clearfix">
+<div id="left-area">
+<article id="post-238233" class="et_pb_post post-238233 post type-post status-publish format-standard has-post-thumbnail hentry category-artificial-intelligence">
+<div class="entry-content">
+<div id="et-boc" class="et-boc">
+<div class="et-l et-l--post">
+<div class="et_builder_inner_content et_pb_gutters3">
+<div class="et_pb_section et_pb_section_4 et_pb_with_background et_section_regular">
+<div class="et_pb_row et_pb_row_5">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_5  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_9  et_pb_text_align_left et_pb_bg_layout_light">
+<div class="et_pb_text_inner"><h1>Machine Learning Guide for Newbies</h1></div>
+</div> 
+</div> 
+</div> 
+</div> <div class="et_pb_section et_pb_section_5 et_pb_with_background et_section_regular section_has_divider et_pb_bottom_divider">
+<div class="et_pb_row et_pb_row_6">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_6  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_image et_pb_image_6">
+<span class="et_pb_image_wrap "><img src="https://static.apro-software.com/wp-content/uploads/2020/07/machine-learning.jpg" alt="machine learning" title="machine-learning" height="auto" width="auto" srcset="https://static.apro-software.com/wp-content/uploads/2020/07/machine-learning.jpg 1280w,https://static.apro-software.com/wp-content/uploads/2020/07/machine-learning-980x551.jpg 980w,https://static.apro-software.com/wp-content/uploads/2020/07/machine-learning-480x270.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1280px, 100vw" class="wp-image-238235"></span>
+</div><div class="et_pb_module et_pb_text et_pb_text_10  et_pb_text_align_left et_pb_bg_layout_light">
+<div class="et_pb_text_inner"><p>Concepts like machine learning and artificial intelligence sound weird and mysterious?</p>
+<p>No worries!</p>
+<p>I will accompany you to discover this fascinating world starting from the basics.</p>
+<p>So, finally, the technological secrets that permeate our modern daily life will be clearer to you.</p>
+<p> </p>
+<h2>Machine learning surrounds us!</h2>
+<p>You wake up, take some bread and heat it in the microwave, which in a few seconds does its job as expected.</p>
+<p>You drive to work and your smartphone recommends you to choose another way because of an accident. Even today you have avoided a dozen insults.</p>
+<p>Are you Italian like me? More than a dozen.</p>
+<p>After four hours in the office, you spend your lunch break biting a sandwich and scrolling photos on Tinder, who seems to know you better than your best friend.</p>
+<p>How do you say? You have never used Tinder?</p>
+<p>Of course, my dear, of course. Me neither! BLINK BLINK.</p>
+<p>After the break, you spend your time PRODUCTIVELY on the laptop browsing Netflix, which recommends several interesting new titles.</p>
+<p> </p>
+<h3>Magic? No, Machine learning!</h3>
+<p>All these interactions between you and the machines now seem obvious and automatic.</p>
+<p>Yet, if you think about it, they have something almost magical. This magic, which is NOT magic, is called machine learning.</p>
+<p>Excluding the microwave.</p>
+<p>That really works by magic.</p>
+<p> </p>
+<h2>What is Machine learning?</h2>
+<p>Machine learning is basically a branch of <a href="https://static.apro-software.com/artificial-intelligence-development-services/">artificial intelligence</a>.</p>
+<p>More specifically, it explores the study and construction of algorithms that can learn from a <a href="https://static.apro-software.com/data-checklist/">set of data</a> and make predictions about them.</p>
+<p>In other words, our algorithms will inductively build a model based on samples. It is, therefore, a process closely related to pattern recognition.</p>
+<p>In the field of computer science, machine learning is a variant of traditional programming.</p>
+<p>It provides systems the ability to automatically learn and improve from experience without being explicitly programmed.</p>
+<p>This translates materially into having algorithms that can give interesting information about a set of data, without having to write any specific code.</p>
+<p>Instead of writing the code, the data is entered into a generic algorithm and the algorithm generates its own logic based on the data entered.</p>
+<p> </p>
+<p><strong><span style="color: #2ab04c;">“Machine learning provides systems the ability to automatically learn and improve from experience without being explicitly programmed.”</span></strong></p>
+<p> </p>
+<h3>A mathematical example to understand Machine learning</h3>
+<p>To give a small example, traditional programming provides an <strong>X</strong> input and an <strong>f</strong> function that processes it giving, as a result, an <strong>Y</strong> output.</p>
+<p>In machine learning we could instead give the computer a series of inputs and the related outputs, asking it to find out which mathematical function connects them.</p></div>
+</div> <div class="et_pb_module et_pb_image et_pb_image_7">
+<span class="et_pb_image_wrap "><img src="https://static.apro-software.com/wp-content/uploads/2020/07/ml-1.jpg" alt="schema machine learning" title="ml" height="auto" width="auto" srcset="https://static.apro-software.com/wp-content/uploads/2020/07/ml-1.jpg 1522w,https://static.apro-software.com/wp-content/uploads/2020/07/ml-1-1280x654.jpg 1280w,https://static.apro-software.com/wp-content/uploads/2020/07/ml-1-980x501.jpg 980w,https://static.apro-software.com/wp-content/uploads/2020/07/ml-1-480x245.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) and (max-width: 1280px) 1280px, (min-width: 1281px) 1522px, 100vw" class="wp-image-238244"></span>
+</div><div class="et_pb_module et_pb_text et_pb_text_11  et_pb_text_align_left et_pb_bg_layout_light">
+<div class="et_pb_text_inner"><p><span style="font-size: 18px;">We talk in this case of <a href="https://static.apro-software.com/supervised-unsupervised-machine-learning/">supervised learning</a> and we will analyze the concept in detail later. </span></p>
+<p><span style="font-size: 18px;">NO SPOILER!</span></p>
+<p><strong>Traditional programming: <span style="color: #e02b20;">Y</span> = <span style="color: #000000;">f </span>(X)</strong></p>
+<p><strong>Machine learning Y = <span style="color: #e02b20;">f</span> (X)</strong></p>
+<p>We could trivially provide the machine with the numbers you see in the table below.</p>
+<p>It will identify the correct function, which in this case is obviously the squared elevation.</p></div>
+</div> <div class="et_pb_module et_pb_image et_pb_image_8">
+<span class="et_pb_image_wrap "><img src="https://static.apro-software.com/wp-content/uploads/2020/07/ml-equation.jpg" alt="machine learning equation" title="ml equation" height="auto" width="auto" srcset="https://static.apro-software.com/wp-content/uploads/2020/07/ml-equation.jpg 1020w,https://static.apro-software.com/wp-content/uploads/2020/07/ml-equation-980x513.jpg 980w,https://static.apro-software.com/wp-content/uploads/2020/07/ml-equation-480x251.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1020px, 100vw" class="wp-image-238242"></span>
+</div><div class="et_pb_module et_pb_text et_pb_text_12  et_pb_text_align_left et_pb_bg_layout_light">
+<div class="et_pb_text_inner"><h2>Machine learning… in practice!</h2>
+<p>You don’t like numbers? Do you hate math?</p>
+<p>No fear!</p>
+<p>Let’s move on to a more practical example, very common among experts in the sector to explain the concept of machine learning to beginners.</p>
+<p>It is the legendary house example. Let’s imagine we are a real estate company.</p>
+<p>Over the years, we have accumulated hundreds or thousands of data relating to real estate sales.</p>
+<p>At this point, our problem is to find a link between the square footage of houses and their potential commercial value.</p>
+<p>We decide to do it through machine learning.</p>
+<p>In essence, the computer will have to identify the connection between input (square footage) and output (price).</p></div>
+</div> <div class="et_pb_module et_pb_image et_pb_image_9">
+<span class="et_pb_image_wrap "><img src="https://static.apro-software.com/wp-content/uploads/2020/07/fubnction-real-estate.jpg" alt="function real estate example machine learning" title="function real estate" height="auto" width="auto" srcset="https://static.apro-software.com/wp-content/uploads/2020/07/fubnction-real-estate.jpg 337w,https://static.apro-software.com/wp-content/uploads/2020/07/fubnction-real-estate-300x220.jpg 300w" sizes="(max-width: 337px) 100vw, 337px" class="wp-image-238245"></span>
+</div><div class="et_pb_module et_pb_text et_pb_text_13  et_pb_text_align_left et_pb_bg_layout_light">
+<div class="et_pb_text_inner"><p>Exactly like our agents are already able to do it through their intuition developed after years of experience.</p>
+<p> </p>
+<h3>How does Machine learning represent reality?</h3>
+<p> </p>
+<p>At this point, it is better to stop for a second and give a couple of definitions.</p>
+<p>The values of the houses that I will have to predict are called <strong>labels</strong>. The values I enter as input are the <strong>features</strong>.</p>
+<p>Finally, every sample I give to the computer is a <strong>data point</strong>.</p>
+<p>Okay, I gave three definitions and not two.</p>
+<p>Be patient.</p>
+<p>Once the input and output data have been entered, the machine will try to process a function that connects them through the generic algorithm mentioned above.</p>
+<p>This is a process that goes through numerous attempts and errors, in which we try to obtain a model that deviates as little as possible from reality.</p>
+<p>In short, we aspire to obtain the smallest possible gap between the model’s expectations and the actual results.</p>
+<p> </p>
+<h3>What is the Cost function? Reality vs expectations<br> </h3>
+<p>This difference between model and reality is calculated through the so-called cost function.</p>
+<p>It calculates what in the image below is represented graphically as the distance between the dots and the curve of the model.</p>
+<p> </p></div>
+</div> <div class="et_pb_module et_pb_image et_pb_image_10">
+<span class="et_pb_image_wrap "><img src="https://static.apro-software.com/wp-content/uploads/2020/07/ml-functions.jpg" alt="ml functions" title="ml functions" height="auto" width="auto" srcset="https://static.apro-software.com/wp-content/uploads/2020/07/ml-functions.jpg 1910w,https://static.apro-software.com/wp-content/uploads/2020/07/ml-functions-1280x404.jpg 1280w,https://static.apro-software.com/wp-content/uploads/2020/07/ml-functions-980x309.jpg 980w,https://static.apro-software.com/wp-content/uploads/2020/07/ml-functions-480x152.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) and (max-width: 1280px) 1280px, (min-width: 1281px) 1910px, 100vw" class="wp-image-238243"></span>
+</div><div class="et_pb_module et_pb_text et_pb_text_14  et_pb_text_align_left et_pb_bg_layout_light">
+<div class="et_pb_text_inner"><p>However, the truth is that, as you can see in the image, a model cannot be perfect. The first example is clearly inappropriate, i.e. underfit.</p>
+<p>The second, on the other hand, already seems to us to be more consistent with the data.</p>
+<p>Finally, the third is the one with the lowest cost. Practically the curve coincides perfectly with all the dots.</p>
+<p>What is missing from the latter model is generalization!</p>
+<p><span style="font-size: 18px;"> </span></p>
+<h3>How do we improve our models in Machine learning?</h3>
+<p><span style="font-size: 18px;">Generalization is the ability to adapt adequately to any new <a href="https://static.apro-software.com/types-of-data-analytics-to-enhance-your-business/">data</a> without fossilizing only on the initial ones.</span></p>
+<p>Otherwise, the model will tend to overfit, as in the third example, and will, therefore, be perfect for the data of the first test but not representative in a different context.</p>
+<p>The <a href="https://static.apro-software.com/ai-solutions/">solution</a> to this problem is to divide the data between the two parts, namely the training set, and the test set.</p>
+<p>The algorithm will then be evaluated based on its performance with data it has never seen, practically on its ability to generalize.<span style="font-size: 18px;"> </span></p></div>
+</div> <div class="et_pb_module et_pb_image et_pb_image_11">
+<span class="et_pb_image_wrap "><img src="https://static.apro-software.com/wp-content/uploads/2020/07/datasets-machine-learning.jpg" alt="datasets machine learning" title="datasets machine learning" height="auto" width="auto" srcset="https://static.apro-software.com/wp-content/uploads/2020/07/datasets-machine-learning.jpg 359w,https://static.apro-software.com/wp-content/uploads/2020/07/datasets-machine-learning-300x117.jpg 300w" sizes="(max-width: 359px) 100vw, 359px" class="wp-image-238241"></span>
+</div><div class="et_pb_module et_pb_text et_pb_text_15  et_pb_text_align_left et_pb_bg_layout_light">
+<div class="et_pb_text_inner"><p>Obviously, the example of the house is extremely simplified because the value of a home will depend on many other factors including the area of the city, the distance from public transport, the view, etc.</p>
+<p>This means that the models applied in reality must be extremely more complex.</p>
+<p>This amount of work is managed by <a href="https://static.apro-software.com/what-are-neural-networks/">neural networks</a>, which we will discuss in the next articles.</p>
+<p>Maybe.</p>
+<p>If you behave well.</p>
+<p> </p>
+<h2>Two main problems of Machine learning: Regression vs Classification</h2>
+<p>Now I am interested in offering you another relatively simple example to clarify the main two problems we may face.</p>
+<p>The first is called regression and we have just analyzed it with the case of the real estate agency.</p>
+<p>We speak of regression when we have inputs and outputs with continuous numerical values, for example with the probability of success, the value of an asset, the age of the subject in a photograph …</p>
+<p> </p>
+<h3>The problem of Classification</h3>
+<p>The second category is called classification. In this case, we will determine belonging to a class.</p>
+<p>For example, we might want to know if there is a dog or a cat in a photo.</p>
+<p>Let’s move on to a classification case. You all know Spotify, right?</p>
+<p>Come on, this is not Tinder, you don’t have to be ashamed!</p>
+<p>Our problem is to understand if a song might please a user. The “like” or “don’t like” results are our labels.</p>
+<p>What are the features instead? Well, it depends a lot on the subject, but we could consider the duration, the pitch of the voice, the gender of the singer, the speed, some keywords, etc.</p>
+<p>We have here a so-called content-based recommendation problem.</p>
+<p>Basically, we have to recommend new content to users based on the characteristics of that content.</p>
+<p><span style="font-size: 18px;"> </span></p>
+<h3>The “trick” of Community based recommendation</h3>
+<p>A similar situation also exists in Pinterest, where photos similar to those already liked are recommended.</p>
+<p>Or in Netflix, which offers users new movies to watch.</p>
+<p>In all these cases, a very performing system is the community-based recommendation.</p>
+<p>In practice, I ask the user community to rate the content they enjoy.</p>
+<p>Then we cross the data with a matrix factorization technique:</p>
+<p>John likes songs <span style="color: #e02b20;">A, B</span>, and <span style="color: #e02b20;">C</span> on Spotify.</p>
+<p>Mike likes songs <span style="color: #e02b20;">A, B</span>, and <span style="color: #e02b20;">D</span> on Spotify.</p>
+<p>I will, therefore, recommend song <span style="color: #e02b20;">D</span> to John and song <span style="color: #e02b20;">C</span> to Mike.</p>
+<p>Thanks to a similar system, Amazon has increased its performance by about 35%. Not bad at all, right?</p>
+<p> </p>
+<p><strong><span style="color: #2ab04c;">“Thanks to Community based recommendation, Amazon has increased its performance by about 35%.”</span></strong></p>
+<p> </p>
+<h2>Some interesting fields of application for Machine learning</h2>
+<p>Machine learning, as we have seen in the previous examples, is truly omnipresent in our daily life.</p>
+<p>Still not convinced? Untrusting!</p>
+<p>Here are some more…</p>
+<p> </p>
+<h3>Financial services:</h3>
+<p>banks use <a href="https://static.apro-software.com/machine-learning-development-services/">machine learning</a> to identify investment opportunities, or to identify customers with risky profiles.</p>
+<p>To this, we can add IT <a href="https://static.apro-software.com/ai-impacts-on-video-surveillance/">surveillance</a> and the detection of potential fraud.</p>
+<p> </p>
+<h3>Energy sector:</h3>
+<p>to find new <a href="https://static.apro-software.com/ai-in-oil-industry/">energy sources</a> by analyzing the soil, to prevent breakdowns in refinery sensors and to streamline distribution processes.</p>
+<p> </p>
+<h3>Healthcare:</h3>
+<p>to analyze patients’ health in real-time through sensors. In this way, doctors are assisted in identifying alarm signals and in developing diagnoses.</p>
+<p> </p>
+<h3>Transport:</h3>
+<p>fundamental in identifying patterns or trends and developing the most efficient routes.</p>
+<p>Machine learning is, therefore, a valid tool both for public transport and for delivery companies.</p>
+<p> </p>
+<h3>Marketing:</h3>
+<p>used on websites to propose interesting articles to specific targets, for example by analyzing the history of their purchases.</p>
+<p>The use of data to personalize the shopping experience or marketing campaigns can certainly be considered the future of e-commerce.</p>
+<p> </p>
+<h3>Public administration:</h3>
+<p>it is used to sift information useful for public security or for better <a href="https://static.apro-software.com/about-us/">management</a> of services to citizens, with a consequent saving of money.</p>
+<p>It can also be used against identity theft and fraud in general.</p>
+<p> </p>
+<h2>How do we train our machines?</h2>
+<p>For now, everything should be clear enough, right? So, let’s take a few minutes to talk about the different ways to train our system!</p>
+<p>The main approaches to learning are supervised, unsupervised, and reinforcement.</p>
+<p> </p>
+<h3>What is Supervised learning?</h3>
+<p>Supervised learning involves building algorithms using already classified examples.</p>
+<p>So we are talking about inputs already associated with their outputs.</p>
+<p>It is commonly used in situations where historical data allow us to predict possible future events.</p>
+<p>For example, it helps us predict whether transactions with some credit cards can be fraudulent, or which customers in a company could seek compensation.</p>
+<p>If you have been careful, you will certainly have already understood that the example of the house fell into this category.</p>
+<p>Right? Good boy/girl!</p>
+<p> </p>
+<h3>What is Unsupervised learning?</h3>
+<p>Unsupervised learning is used instead with data that does not already have a classification.</p>
+<p>The algorithm will have to independently understand what is provided to it.</p>
+<p>We use this system to explore the data and identify any internal structures or patterns.</p>
+<p>In short, we identify groups and find relationships or similarities in the data.</p>
+<p>It is very common in the processing of transnational data, for example when we want to identify customers with common characteristics to whom we can turn to through specific marketing campaigns.</p>
+<p>It is also useful for discovering the main differences between various consumer segments.</p>
+<p>Finally, it can be applied to notice anomalous values with respect to trends.</p>
+<p> </p>
+<h3>What about Learning by reinforcement?</h3>
+<p>The last case is Learning by reinforcement, especially used in video games and for navigation.</p>
+<p>The algorithm finds out with which actions the greatest rewards are obtained through trial and error.</p>
+<p>The three main components of this process are the agent (who learns and makes decisions), the actions (what the agent can do), and the environment (what the agent interacts with).</p>
+<p>The agent’s goal is to maximize the reward by reaching the goal in the shortest possible time.</p>
+<p> </p>
+<h2>Don’t forget the importance of data!</h2>
+<p>Speaking of learning, we cannot forget a fundamental but often overshadowed aspect, namely the dataset.</p>
+<p>The “menu” of data made available to the machine is of crucial importance as it deeply determines the quality of learning and, consequently, the final result.</p>
+<p> </p>
+<h3>The best qualities of data</h3>
+<p> </p>
+<p>Our dataset should be:</p>
+<p> </p>
+<h4>Large:</h4>
+<p>it should, therefore, present a large number of cases, which may even be thousands or millions depending on the problem to be managed.</p>
+<p>Returning to the example of the photo of the cat (yep, I like kittens), we will propose thousands of photos of cats to the computer. The same amount that you could find in a group chat of your mother with her 50-year-old friends.</p>
+<p> </p>
+<h4>Various:</h4>
+<p>there will be cats of all breeds, fur colors, positions, sizes, etc. Yes, even those hairless alien cats, known as sphynx.</p>
+<p> </p>
+<h4></h4>
+<h4>Balanced:</h4>
+<p>the sample must have a fairly homogeneous number of different variables inside. So the computer will analyze a similar amount of photos of cats and … dogs? Tigers? I leave it up to you.</p>
+<p>A fairly common trick to greatly expand our dataset without too much effort is the augmenting.</p>
+<p>Basically, we artificially generate many new images by applying distortions to the originals (for example by changing light, applying blur …).</p>
+<p>“The menu of data made available to the machine is of crucial importance as it deeply determines the quality of learning and, consequently, the final result.”</p>
+<p> </p>
+<h2>Conclusions and coffee break</h2>
+<p>KNOCK KNOCK.</p>
+<p>Are you still awake?</p>
+<p>Not me.</p>
+<p>After the first half of the article, my hand started to move by itself on the keyboard. So let’s put on paper some conclusions and go to relax.</p>
+<p>Machine learning is a fundamental aspect not only of programming itself but of our life.</p>
+<p>It solves problems otherwise impossible to manage, opens many new perspectives, and is here to stay long.</p>
+<p>But above all, it ruined my illusions about a world full of magic.<br>I’m gonna eat a lot of chocolate to compensate for this trauma.</p>
+<p> </p>
+<p> </p></div>
+</div> 
+</div> 
+</div> 
+<div class="et_pb_bottom_inside_divider et-no-transition"></div>
+</div> <div class="et_pb_section et_pb_section_6 et_pb_with_background et_section_regular section_has_divider et_pb_bottom_divider">
+<div class="et_pb_row et_pb_row_7">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_7  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_16  et_pb_text_align_left et_pb_bg_layout_light">
+<div class="et_pb_text_inner"><h2>Need support with your software development?</h2></div>
+</div> <div class="et_pb_module et_pb_text et_pb_text_17  et_pb_text_align_center et_pb_bg_layout_light">
+<div class="et_pb_text_inner">Talk with one of our experts today to learn how we can help you scale your development efforts or create a custom application.</div>
+</div> 
+</div> 
+</div> <div class="et_pb_row et_pb_row_8">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_8  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_button_module_wrapper et_pb_button_1_wrapper et_pb_button_alignment_center et_pb_module ">
+<a class="et_pb_button et_pb_custom_button_icon et_pb_button_1 et_animated et_hover_enabled et_pb_bg_layout_dark" href="https://static.apro-software.com/contact/" data-icon="$">Request Consultation call</a>
+</div>
+</div> 
+</div> 
+<div class="et_pb_bottom_inside_divider et-no-transition"></div>
+</div> <div class="et_pb_section et_pb_section_7 et_section_regular section_has_divider et_pb_bottom_divider">
+<div class="et_pb_row et_pb_row_9">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_9  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_team_member et_pb_team_member_1 clearfix  et_pb_bg_layout_light">
+<div class="et_pb_team_member_image et-waypoint et_pb_animation_off"><img width="122" height="122" src="https://static.apro-software.com/wp-content/uploads/2020/06/adrea-resize.jpg" alt="Andrea Di Stefano" class="wp-image-237331"></div>
+<div class="et_pb_team_member_description">
+<h3 class="et_pb_module_header">Andrea Di Stefano</h3>
+<div><p>Andrea is a journalist and teacher of Italian with a long-standing interest in tech and media. He loves to handle touchscreens, but to correct his students’ homework he prefers the good old red marker on paper!</p></div>
+<ul class="et_pb_member_social_links"><li><a href="https://www.facebook.com/andrea.d.stefano.5" class="et_pb_font_icon et_pb_facebook_icon"><span>Facebook</span></a></li><li><a href="https://www.linkedin.com/in/andrea-di-stefano-aa866a159/" class="et_pb_font_icon et_pb_linkedin_icon"><span>LinkedIn</span></a></li></ul>
+</div> 
+</div> 
+</div> 
+</div> 
+<div class="et_pb_bottom_inside_divider et-no-transition"></div>
+</div>  </div>
+</div>
+</div>
+<span class="et_social_bottom_trigger"></span> </div> 
+<div class="et_post_meta_wrapper">
+</div> 
+</article> 
+</div> 
+</div> 
+</div> 
+</div> 
+<footer id="main-footer">
+<div id="footer-bottom">
+<div class="container clearfix">
+<ul class="et-social-icons">
+<li class="et-social-icon et-social-facebook">
+<a href="https://web.facebook.com/Apro.software/" target="_blank" class="icon">
+<span>Facebook</span>
+</a>
+</li>
+<li class="et-social-icon et-social-twitter">
+<a href="https://twitter.com/Apro_Software" target="_blank" class="icon">
+<span>Twitter</span>
+</a>
+</li>
+<li class="et-social-icon et-social-linkedin">
+<a href="https://www.linkedin.com/company/a.p.r.o.software/" target="_blank" class="icon">
+<span>Linkedin</span>
+</a>
+</li>
+</ul><div id="footer-info">© 2020 | Apro Software <a href="https://static.apro-software.com/apro-software-scholarship/">Apro Scholarship </a>|<a href="https://static.apro-software.com/privacy-policy/"> Privacy Policy</a> |<a href="https://static.apro-software.com/tc/"> Terms and Conditions</a> |<a href="https://apro-software.atlassian.net/servicedesk/customer/portal/3"> Clients Support </a> |</div> </div> 
+</div>
+</footer> 
+</div> 
+</div> 
+<style id="divioverlay-styles" type="text/css"></style><div id="divioverlay-links"></div><div id="sidebar-overlay"></div> <script type="65e21cf3d61129d9d351874f-text/javascript">
+		var divioverlays_ajaxurl = "https://static.apro-software.com/"
+		, divioverlays_us = "101d459082"
+		, divioverlays_loadingimg = "https://static.apro-software.com/wp-content/plugins/divi-overlays/assets/img/divilife-loader.svg";
+		</script>
+<div class="et_social_sidebar_networks et_social_visible_sidebar et_social_fadein et_social_animated et_social_rectangle et_social_sidebar_flip et_social_mobile_off">
+<ul class="et_social_icons_container"><li class="et_social_facebook">
+<a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fapro-software.com%2Fmachine-learning-for-newbies%2F&t=Machine%20Learning%20Guide%20for%20Newbies" class="et_social_share" rel="nofollow" data-social_name="facebook" data-post_id="238233" data-social_type="share" data-location="sidebar">
+<i class="et_social_icon et_social_icon_facebook"></i>
+<span class="et_social_overlay"></span>
+</a>
+</li><li class="et_social_twitter">
+<a href="https://twitter.com/share?text=Machine%20Learning%20Guide%20for%20Newbies&url=https%3A%2F%2Fapro-software.com%2Fmachine-learning-for-newbies%2F" class="et_social_share" rel="nofollow" data-social_name="twitter" data-post_id="238233" data-social_type="share" data-location="sidebar">
+<i class="et_social_icon et_social_icon_twitter"></i>
+<span class="et_social_overlay"></span>
+</a>
+</li><li class="et_social_reddit">
+<a href="https://www.reddit.com/submit?url=https%3A%2F%2Fapro-software.com%2Fmachine-learning-for-newbies%2F&title=Machine%20Learning%20Guide%20for%20Newbies" class="et_social_share" rel="nofollow" data-social_name="reddit" data-post_id="238233" data-social_type="share" data-location="sidebar">
+<i class="et_social_icon et_social_icon_reddit"></i>
+<span class="et_social_overlay"></span>
+</a>
+</li></ul>
+<span class="et_social_hide_sidebar et_social_icon"></span>
+</div> 
+<script type="65e21cf3d61129d9d351874f-text/javascript">
+        document.addEventListener( 'wpcf7mailsent', function( event ) {
+        if( "fb_pxl_code" in event.detail.apiResponse){
+          eval(event.detail.apiResponse.fb_pxl_code);
+        }
+      }, false );
+    </script>
+
+<div id="fb-pxl-ajax-code"></div> <script type="65e21cf3d61129d9d351874f-text/javascript">
+				var et_animation_data = [{"class":"et_pb_button_0","style":"slide","repeat":"once","duration":"1000ms","delay":"0ms","intensity":"50%","starting_opacity":"0%","speed_curve":"ease-in-out"},{"class":"et_pb_button_1","style":"slide","repeat":"once","duration":"1000ms","delay":"0ms","intensity":"50%","starting_opacity":"0%","speed_curve":"ease-in-out"},{"class":"et_pb_button_2","style":"slide","repeat":"once","duration":"1000ms","delay":"0ms","intensity":"50%","starting_opacity":"0%","speed_curve":"ease-in-out"}];
+				</script>
+<script type="65e21cf3d61129d9d351874f-text/javascript" src="https://static.apro-software.com/wp-content/plugins/monarch/js/idle-timer.min.js" id="et_monarch-idle-js"></script>
+<script type="65e21cf3d61129d9d351874f-text/javascript" id="et_monarch-custom-js-js-extra">
+/* <![CDATA[ */
+var monarchSettings = {"ajaxurl":"https:\/\/static.apro-software.com\/wp-admin\/admin-ajax.php","pageurl":"https:\/\/static.apro-software.com\/machine-learning-for-newbies\/","stats_nonce":"8ea8ac7ed8","share_counts":"d80ec55f7d","follow_counts":"06c2d3b9f0","total_counts":"0cea5a1841","media_single":"83876acc1c","media_total":"8174fb2cd7","generate_all_window_nonce":"904c2401aa","no_img_message":"No images available for sharing on this page"};
+/* ]]> */
+</script>
+<script type="65e21cf3d61129d9d351874f-text/javascript" src="https://static.apro-software.com/wp-content/plugins/monarch/js/custom.js" id="et_monarch-custom-js-js"></script>
+<script type="65e21cf3d61129d9d351874f-text/javascript" id="rocket-browser-checker-js-after">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script type="65e21cf3d61129d9d351874f-text/javascript" id="rocket-delay-js-js-after">
+(function() {
+"use strict";var e=function(){function n(e,t){for(var r=0;r<t.length;r++){var n=t[r];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}return function(e,t,r){return t&&n(e.prototype,t),r&&n(e,r),e}}();function n(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function r(e,t){n(this,r),this.attrName="data-rocketlazyloadscript",this.browser=t,this.options=this.browser.options,this.triggerEvents=e,this.userEventListener=this.triggerListener.bind(this)}return e(r,[{key:"init",value:function(){this._addEventListener(this)}},{key:"reset",value:function(){this._removeEventListener(this)}},{key:"_addEventListener",value:function(t){this.triggerEvents.forEach(function(e){return window.addEventListener(e,t.userEventListener,t.options)})}},{key:"_removeEventListener",value:function(t){this.triggerEvents.forEach(function(e){return window.removeEventListener(e,t.userEventListener,t.options)})}},{key:"_loadScriptSrc",value:function(){var r=this,e=document.querySelectorAll("script["+this.attrName+"]");0!==e.length&&Array.prototype.slice.call(e).forEach(function(e){var t=e.getAttribute(r.attrName);e.setAttribute("src",t),e.removeAttribute(r.attrName)}),this.reset()}},{key:"triggerListener",value:function(){this._loadScriptSrc(),this._removeEventListener(this)}}],[{key:"run",value:function(){RocketBrowserCompatibilityChecker&&new r(["keydown","mouseover","touchmove","touchstart","wheel"],new RocketBrowserCompatibilityChecker({passive:!0})).init()}}]),r}();t.run();
+}());
+</script>
+<script type="65e21cf3d61129d9d351874f-text/javascript" id="rocket-preload-links-js-extra">
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/(.+\/)?feed\/?.+\/?|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$)|\/wp-admin\/|\/logout\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|php|pdf|html|htm","siteUrl":"https:\/\/PLACEHOLDER.wpsho","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type="65e21cf3d61129d9d351874f-text/javascript" id="rocket-preload-links-js-after">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script type="65e21cf3d61129d9d351874f-text/javascript" id="divi-custom-script-js-extra">
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_shortcodes_strings = {"previous":"Previous","next":"Next"};
+var et_pb_custom = {"ajaxurl":"https:\/\/static.apro-software.com\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/static.apro-software.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/static.apro-software.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"f477bf92b5","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","et_ab_log_nonce":"5b7243b24a","fill_message":"Please, fill in the following fields:","contact_error_message":"Please, fix the following errors:","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","wrong_captcha":"You entered the wrong number in captcha.","wrong_checkbox":"Checkbox","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"238233","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"yes","is_shortcode_tracking":"","tinymce_uri":""}; var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"}; var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_box_shadow_elements = [];
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+var et_pb_sticky_elements = [];
+/* ]]> */
+</script>
+<script type="65e21cf3d61129d9d351874f-text/javascript" src="https://static.apro-software.com/wp-content/themes/Divi/js/custom.unified.js" id="divi-custom-script-js"></script>
+<script type="65e21cf3d61129d9d351874f-text/javascript" src="https://static.apro-software.com/wp-content/themes/Divi/core/admin/js/es6-promise.auto.min.js" id="es6-promise-js"></script>
+<script type="65e21cf3d61129d9d351874f-text/javascript" src="https://www.google.com/recaptcha/api.js?render=6LcP26gZAAAAALFHJ7s3DYSM7nPcbvhIn_i46pPO&ver=4.9.4" id="et-recaptcha-v3-js"></script>
+<script type="65e21cf3d61129d9d351874f-text/javascript" id="et-core-api-spam-recaptcha-js-extra">
+/* <![CDATA[ */
+var et_core_api_spam_recaptcha = {"site_key":"6LcP26gZAAAAALFHJ7s3DYSM7nPcbvhIn_i46pPO","page_action":{"action":"machine_learning_for_newbies"}};
+/* ]]> */
+</script>
+<script type="65e21cf3d61129d9d351874f-text/javascript" src="https://static.apro-software.com/wp-content/themes/Divi/core/admin/js/recaptcha.js" id="et-core-api-spam-recaptcha-js"></script>
+<script type="65e21cf3d61129d9d351874f-text/javascript" src="https://static.apro-software.com/wp-content/themes/Divi/core/admin/js/common.js" id="et-core-common-js"></script>
+<script type="65e21cf3d61129d9d351874f-text/javascript" src="https://static.apro-software.com/wp-content/plugins/divi-overlays/assets/js/jquery.exitintent.js" id="exit-intent-js"></script>
+<script type="65e21cf3d61129d9d351874f-text/javascript" src="https://static.apro-software.com/wp-content/plugins/divi-overlays/assets/js/custom.js" id="divi-custom-js-js"></script>
+<style id="et-core-unified-238233-cached-inline-styles-2">.et_pb_section_0.et_pb_section{padding-top:30px;padding-right:0px;padding-bottom:13px;padding-left:0px;margin-bottom:-74px;background-color:#ffffff!important}.et_pb_section_8.et_pb_section{padding-top:30px;padding-right:0px;padding-bottom:13px;padding-left:0px;margin-bottom:-74px;background-color:#ffffff!important}.et_pb_section_4.et_pb_section{padding-top:30px;padding-right:0px;padding-bottom:13px;padding-left:0px;margin-bottom:-74px;background-color:#ffffff!important}.et_pb_text_0{font-size:20px;min-height:21px}.et_pb_text_18{font-size:20px;min-height:21px}.et_pb_text_9{font-size:20px;min-height:21px}.et_pb_text_0 h1{font-family:'Montserrat',sans-serif;font-weight:700;text-decoration-style:dotted;font-size:2.5rem;color:#e88e20!important;line-height:1.3em;text-align:center}.et_pb_text_18 h1{font-family:'Montserrat',sans-serif;font-weight:700;text-decoration-style:dotted;font-size:2.5rem;color:#e88e20!important;line-height:1.3em;text-align:center}.et_pb_text_9 h1{font-family:'Montserrat',sans-serif;font-weight:700;text-decoration-style:dotted;font-size:2.5rem;color:#e88e20!important;line-height:1.3em;text-align:center}.et_pb_text_9 h2{font-size:40px;line-height:0.8em}.et_pb_text_0 h2{font-size:40px;line-height:0.8em}.et_pb_text_18 h2{font-size:40px;line-height:0.8em}.et_pb_section_9{min-height:7733px}.et_pb_section_5{min-height:7733px}.et_pb_section_1{min-height:7733px}.et_pb_section_1.et_pb_section{padding-top:11px;padding-bottom:4px;margin-top:65px;background-color:#ffffff!important}.et_pb_section_5.et_pb_section{padding-top:11px;padding-bottom:4px;margin-top:65px;background-color:#ffffff!important}.et_pb_section_9.et_pb_section{padding-top:11px;padding-bottom:4px;margin-top:65px;background-color:#ffffff!important}.et_pb_section_5.section_has_divider.et_pb_bottom_divider .et_pb_bottom_inside_divider{background-image:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMjhweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNlODhlMjAiPjwvZz48L3N2Zz4=);background-size:100% 128px;bottom:0;height:128px;z-index:1}.et_pb_section_1.section_has_divider.et_pb_bottom_divider .et_pb_bottom_inside_divider{background-image:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMjhweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNlODhlMjAiPjwvZz48L3N2Zz4=);background-size:100% 128px;bottom:0;height:128px;z-index:1}.et_pb_section_6.section_has_divider.et_pb_bottom_divider .et_pb_bottom_inside_divider{background-image:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMjhweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNlODhlMjAiPjwvZz48L3N2Zz4=);background-size:100% 128px;bottom:0;height:128px;z-index:1}.et_pb_section_10.section_has_divider.et_pb_bottom_divider .et_pb_bottom_inside_divider{background-image:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMjhweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNlODhlMjAiPjwvZz48L3N2Zz4=);background-size:100% 128px;bottom:0;height:128px;z-index:1}.et_pb_section_2.section_has_divider.et_pb_bottom_divider .et_pb_bottom_inside_divider{background-image:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMjhweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNlODhlMjAiPjwvZz48L3N2Zz4=);background-size:100% 128px;bottom:0;height:128px;z-index:1}.et_pb_section_9.section_has_divider.et_pb_bottom_divider .et_pb_bottom_inside_divider{background-image:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMjhweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNlODhlMjAiPjwvZz48L3N2Zz4=);background-size:100% 128px;bottom:0;height:128px;z-index:1}.et_pb_row_11.et_pb_row{padding-top:6px!important;padding-bottom:0px!important;margin-top:0px!important;margin-bottom:-4px!important;padding-top:6px;padding-bottom:0px}.et_pb_row_6.et_pb_row{padding-top:6px!important;padding-bottom:0px!important;margin-top:0px!important;margin-bottom:-4px!important;padding-top:6px;padding-bottom:0px}.et_pb_row_1.et_pb_row{padding-top:6px!important;padding-bottom:0px!important;margin-top:0px!important;margin-bottom:-4px!important;padding-top:6px;padding-bottom:0px}.et_pb_row_11,body #page-container .et-db #et-boc .et-l .et_pb_row_11.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_11.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_11.et_pb_row{width:auto}.et_pb_row_1,body #page-container .et-db #et-boc .et-l .et_pb_row_1.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_1.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_1.et_pb_row{width:auto}.et_pb_row_6,body #page-container .et-db #et-boc .et-l .et_pb_row_6.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_6.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_6.et_pb_row{width:auto}.et_pb_image_12 .et_pb_image_wrap img{min-height:329px}.et_pb_image_0 .et_pb_image_wrap img{min-height:329px}.et_pb_image_6 .et_pb_image_wrap img{min-height:329px}.et_pb_image_3{width:70%;text-align:center}.et_pb_image_12{width:70%;text-align:center}.et_pb_image_0{width:70%;text-align:center}.et_pb_image_7{width:70%;text-align:center}.et_pb_image_9{width:70%;text-align:center}.et_pb_image_15{width:70%;text-align:center}.et_pb_image_1{width:70%;text-align:center}.et_pb_image_6{width:70%;text-align:center}.et_pb_image_13{width:70%;text-align:center}.et_pb_text_19.et_pb_text{color:#000000!important}.et_pb_text_6.et_pb_text{color:#000000!important}.et_pb_text_11.et_pb_text{color:#000000!important}.et_pb_text_17.et_pb_text{color:#000000!important}.et_pb_text_8.et_pb_text{color:#000000!important}.et_pb_text_15.et_pb_text{color:#000000!important}.et_pb_text_13.et_pb_text{color:#000000!important}.et_pb_text_5.et_pb_text{color:#000000!important}.et_pb_text_10.et_pb_text{color:#000000!important}.et_pb_text_14.et_pb_text{color:#000000!important}.et_pb_text_20.et_pb_text{color:#000000!important}.et_pb_text_12.et_pb_text{color:#000000!important}.et_pb_text_21.et_pb_text{color:#000000!important}.et_pb_text_1.et_pb_text{color:#000000!important}.et_pb_text_22.et_pb_text{color:#000000!important}.et_pb_text_23.et_pb_text{color:#000000!important}.et_pb_text_26.et_pb_text{color:#000000!important}.et_pb_text_2.et_pb_text{color:#000000!important}.et_pb_text_3.et_pb_text{color:#000000!important}.et_pb_text_4.et_pb_text{color:#000000!important}.et_pb_text_24.et_pb_text{color:#000000!important}.et_pb_text_21 p{line-height:1.9em}.et_pb_text_8 p{line-height:1.9em}.et_pb_text_23 p{line-height:1.9em}.et_pb_text_3 p{line-height:1.9em}.et_pb_text_17 p{line-height:1.9em}.et_pb_text_24 p{line-height:1.9em}.et_pb_text_15 p{line-height:1.9em}.et_pb_text_2 p{line-height:1.9em}.et_pb_text_26 p{line-height:1.9em}.et_pb_text_10 p{line-height:1.9em}.et_pb_text_14 p{line-height:1.9em}.et_pb_text_11 p{line-height:1.9em}.et_pb_text_13 p{line-height:1.9em}.et_pb_text_1 p{line-height:1.9em}.et_pb_text_22 p{line-height:1.9em}.et_pb_text_6 p{line-height:1.9em}.et_pb_text_4 p{line-height:1.9em}.et_pb_text_20 p{line-height:1.9em}.et_pb_text_5 p{line-height:1.9em}.et_pb_text_19 p{line-height:1.9em}.et_pb_text_12 p{line-height:1.9em}.et_pb_text_10{font-family:'Montserrat',sans-serif;font-size:18px;line-height:1.9em;padding-top:0px!important;padding-bottom:0px!important;width:70%}.et_pb_text_19{font-family:'Montserrat',sans-serif;font-size:18px;line-height:1.9em;padding-top:0px!important;padding-bottom:0px!important;width:70%}.et_pb_text_1{font-family:'Montserrat',sans-serif;font-size:18px;line-height:1.9em;padding-top:0px!important;padding-bottom:0px!important;width:70%}.et_pb_text_21 h1{font-weight:700;font-size:29px}.et_pb_text_10 h1{font-weight:700;font-size:29px}.et_pb_text_14 h1{font-weight:700;font-size:29px}.et_pb_text_4 h1{font-weight:700;font-size:29px}.et_pb_text_2 h1{font-weight:700;font-size:29px}.et_pb_text_24 h1{font-weight:700;font-size:29px}.et_pb_text_1 h1{font-weight:700;font-size:29px}.et_pb_text_6 h1{font-weight:700;font-size:29px}.et_pb_text_15 h1{font-weight:700;font-size:29px}.et_pb_text_19 h1{font-weight:700;font-size:29px}.et_pb_text_22 h1{font-weight:700;font-size:29px}.et_pb_text_12 h1{font-weight:700;font-size:29px}.et_pb_text_5 h1{font-weight:700;font-size:29px}.et_pb_text_3 h1{font-weight:700;font-size:29px}.et_pb_text_20 h1{font-weight:700;font-size:29px}.et_pb_text_23 h1{font-weight:700;font-size:29px}.et_pb_text_11 h1{font-weight:700;font-size:29px}.et_pb_text_13 h1{font-weight:700;font-size:29px}.et_pb_text_11 h2{font-family:'Montserrat',sans-serif;font-weight:600;color:#e88e20!important;line-height:1.6em;transition:color 300ms ease 0ms}.et_pb_text_5 h2{font-family:'Montserrat',sans-serif;font-weight:600;color:#e88e20!important;line-height:1.6em;transition:color 300ms ease 0ms}.et_pb_text_1 h2{font-family:'Montserrat',sans-serif;font-weight:600;color:#e88e20!important;line-height:1.6em;transition:color 300ms ease 0ms}.et_pb_text_13 h2{font-family:'Montserrat',sans-serif;font-weight:600;color:#e88e20!important;line-height:1.6em;transition:color 300ms ease 0ms}.et_pb_text_10 h2{font-family:'Montserrat',sans-serif;font-weight:600;color:#e88e20!important;line-height:1.6em;transition:color 300ms ease 0ms}.et_pb_text_12 h2{font-family:'Montserrat',sans-serif;font-weight:600;color:#e88e20!important;line-height:1.6em;transition:color 300ms ease 0ms}.et_pb_text_20 h2{font-family:'Montserrat',sans-serif;font-weight:600;color:#e88e20!important;line-height:1.6em;transition:color 300ms ease 0ms}.et_pb_text_24 h2{font-family:'Montserrat',sans-serif;font-weight:600;color:#e88e20!important;line-height:1.6em;transition:color 300ms ease 0ms}.et_pb_text_15 h2{font-family:'Montserrat',sans-serif;font-weight:600;color:#e88e20!important;line-height:1.6em;transition:color 300ms ease 0ms}.et_pb_text_23 h2{font-family:'Montserrat',sans-serif;font-weight:600;color:#e88e20!important;line-height:1.6em;transition:color 300ms ease 0ms}.et_pb_text_22 h2{font-family:'Montserrat',sans-serif;font-weight:600;color:#e88e20!important;line-height:1.6em;transition:color 300ms ease 0ms}.et_pb_text_4 h2{font-family:'Montserrat',sans-serif;font-weight:600;color:#e88e20!important;line-height:1.6em;transition:color 300ms ease 0ms}.et_pb_text_3 h2{font-family:'Montserrat',sans-serif;font-weight:600;color:#e88e20!important;line-height:1.6em;transition:color 300ms ease 0ms}.et_pb_text_19 h2{font-family:'Montserrat',sans-serif;font-weight:600;color:#e88e20!important;line-height:1.6em;transition:color 300ms ease 0ms}.et_pb_text_21 h2{font-family:'Montserrat',sans-serif;font-weight:600;color:#e88e20!important;line-height:1.6em;transition:color 300ms ease 0ms}.et_pb_text_6 h2{font-family:'Montserrat',sans-serif;font-weight:600;color:#e88e20!important;line-height:1.6em;transition:color 300ms ease 0ms}.et_pb_text_2 h2{font-family:'Montserrat',sans-serif;font-weight:600;color:#e88e20!important;line-height:1.6em;transition:color 300ms ease 0ms}.et_pb_text_14 h2{font-family:'Montserrat',sans-serif;font-weight:600;color:#e88e20!important;line-height:1.6em;transition:color 300ms ease 0ms}.et_pb_text_14 h2:hover{color:#2ab04c!important}.et_pb_text_23 h2:hover{color:#2ab04c!important}.et_pb_text_15 h2:hover{color:#2ab04c!important}.et_pb_text_19 h2:hover{color:#2ab04c!important}.et_pb_text_20 h2:hover{color:#2ab04c!important}.et_pb_text_12 h2:hover{color:#2ab04c!important}.et_pb_text_22 h2:hover{color:#2ab04c!important}.et_pb_text_21 h2:hover{color:#2ab04c!important}.et_pb_text_24 h2:hover{color:#2ab04c!important}.et_pb_text_13 h2:hover{color:#2ab04c!important}.et_pb_text_4 h2:hover{color:#2ab04c!important}.et_pb_text_1 h2:hover{color:#2ab04c!important}.et_pb_text_6 h2:hover{color:#2ab04c!important}.et_pb_text_3 h2:hover{color:#2ab04c!important}.et_pb_text_10 h2:hover{color:#2ab04c!important}.et_pb_text_11 h2:hover{color:#2ab04c!important}.et_pb_text_2 h2:hover{color:#2ab04c!important}.et_pb_text_5 h2:hover{color:#2ab04c!important}.et_pb_text_6 h3{font-weight:600}.et_pb_text_22 h3{font-weight:600}.et_pb_text_15 h3{font-weight:600}.et_pb_text_14 h3{font-weight:600}.et_pb_text_21 h3{font-weight:600}.et_pb_text_23 h3{font-weight:600}.et_pb_text_10 h3{font-weight:600}.et_pb_text_4 h3{font-weight:600}.et_pb_text_20 h3{font-weight:600}.et_pb_text_2 h3{font-weight:600}.et_pb_text_13 h3{font-weight:600}.et_pb_text_5 h3{font-weight:600}.et_pb_text_24 h3{font-weight:600}.et_pb_text_11 h3{font-weight:600}.et_pb_text_19 h3{font-weight:600}.et_pb_text_12 h3{font-weight:600}.et_pb_text_1 h3{font-weight:600}.et_pb_text_3 h3{font-weight:600}.et_pb_text_20 h4{font-weight:600;font-size:20px}.et_pb_text_4 h4{font-weight:600;font-size:20px}.et_pb_text_5 h4{font-weight:600;font-size:20px}.et_pb_text_21 h4{font-weight:600;font-size:20px}.et_pb_text_19 h4{font-weight:600;font-size:20px}.et_pb_text_15 h4{font-weight:600;font-size:20px}.et_pb_text_14 h4{font-weight:600;font-size:20px}.et_pb_text_2 h4{font-weight:600;font-size:20px}.et_pb_text_3 h4{font-weight:600;font-size:20px}.et_pb_text_22 h4{font-weight:600;font-size:20px}.et_pb_text_6 h4{font-weight:600;font-size:20px}.et_pb_text_12 h4{font-weight:600;font-size:20px}.et_pb_text_1 h4{font-weight:600;font-size:20px}.et_pb_text_10 h4{font-weight:600;font-size:20px}.et_pb_text_23 h4{font-weight:600;font-size:20px}.et_pb_text_11 h4{font-weight:600;font-size:20px}.et_pb_text_24 h4{font-weight:600;font-size:20px}.et_pb_text_13 h4{font-weight:600;font-size:20px}.et_pb_text_2{font-family:'Montserrat',sans-serif;font-size:18px;line-height:1.9em;padding-top:0px!important;width:70%}.et_pb_text_20{font-family:'Montserrat',sans-serif;font-size:18px;line-height:1.9em;padding-top:0px!important;width:70%}.et_pb_text_22{font-family:'Montserrat',sans-serif;font-size:18px;line-height:1.9em;padding-top:0px!important;width:70%}.et_pb_text_24{font-family:'Montserrat',sans-serif;font-size:18px;line-height:1.9em;padding-top:0px!important;width:70%}.et_pb_text_5{font-family:'Montserrat',sans-serif;font-size:18px;line-height:1.9em;padding-top:0px!important;width:70%}.et_pb_text_4{font-family:'Montserrat',sans-serif;font-size:18px;line-height:1.9em;padding-top:0px!important;width:70%}.et_pb_text_21{font-family:'Montserrat',sans-serif;font-size:18px;line-height:1.9em;padding-top:0px!important;width:70%}.et_pb_text_23{font-family:'Montserrat',sans-serif;font-size:18px;line-height:1.9em;padding-top:0px!important;width:70%}.et_pb_text_3{font-family:'Montserrat',sans-serif;font-size:18px;line-height:1.9em;padding-top:0px!important;width:70%}.et_pb_text_12{font-family:'Montserrat',sans-serif;font-size:18px;line-height:1.9em;padding-top:0px!important;width:70%}.et_pb_text_6{font-family:'Montserrat',sans-serif;font-size:18px;line-height:1.9em;padding-top:0px!important;width:70%}.et_pb_text_15{font-family:'Montserrat',sans-serif;font-size:18px;line-height:1.9em;padding-top:0px!important;width:70%}.et_pb_text_11{font-family:'Montserrat',sans-serif;font-size:18px;line-height:1.9em;padding-top:0px!important;width:70%}.et_pb_text_14{font-family:'Montserrat',sans-serif;font-size:18px;line-height:1.9em;padding-top:0px!important;width:70%}.et_pb_text_13{font-family:'Montserrat',sans-serif;font-size:18px;line-height:1.9em;padding-top:0px!important;width:70%}.et_pb_image_14{width:70%;text-align:left;margin-left:0}.et_pb_image_4{width:70%;text-align:left;margin-left:0}.et_pb_image_10{width:70%;text-align:left;margin-left:0}.et_pb_image_2{width:70%;text-align:left;margin-left:0}.et_pb_image_16{width:70%;text-align:left;margin-left:0}.et_pb_image_8{width:70%;text-align:left;margin-left:0}.et_pb_image_5{width:76%;text-align:center}.et_pb_image_17{width:76%;text-align:center}.et_pb_image_11{width:76%;text-align:center}.et_pb_section_6.et_pb_section{margin-top:-19px;margin-bottom:-3%;background-color:#f7f7f7!important}.et_pb_section_2.et_pb_section{margin-top:-19px;margin-bottom:-3%;background-color:#f7f7f7!important}.et_pb_section_10.et_pb_section{margin-top:-19px;margin-bottom:-3%;background-color:#f7f7f7!important}.et_pb_row_7.et_pb_row{padding-top:2px!important;padding-top:2px}.et_pb_row_12.et_pb_row{padding-top:2px!important;padding-top:2px}.et_pb_row_2.et_pb_row{padding-top:2px!important;padding-top:2px}.et_pb_text_16 h2{font-family:'Montserrat',sans-serif;font-weight:600;font-size:1.8rem;color:#e88e20!important;text-align:center}.et_pb_text_7 h2{font-family:'Montserrat',sans-serif;font-weight:600;font-size:1.8rem;color:#e88e20!important;text-align:center}.et_pb_text_25 h2{font-family:'Montserrat',sans-serif;font-weight:600;font-size:1.8rem;color:#e88e20!important;text-align:center}.et_pb_text_25{padding-right:5%!important;padding-left:5%!important;margin-bottom:-1px!important}.et_pb_text_16{padding-right:5%!important;padding-left:5%!important;margin-bottom:-1px!important}.et_pb_text_7{padding-right:5%!important;padding-left:5%!important;margin-bottom:-1px!important}.et_pb_text_8{font-family:'Montserrat',sans-serif;font-size:18px;line-height:1.9em;padding-right:5%!important;padding-left:5%!important;margin-top:12px!important;margin-bottom:1px!important}.et_pb_text_26{font-family:'Montserrat',sans-serif;font-size:18px;line-height:1.9em;padding-right:5%!important;padding-left:5%!important;margin-top:12px!important;margin-bottom:1px!important}.et_pb_text_17{font-family:'Montserrat',sans-serif;font-size:18px;line-height:1.9em;padding-right:5%!important;padding-left:5%!important;margin-top:12px!important;margin-bottom:1px!important}.et_pb_row_3.et_pb_row{margin-bottom:25px!important}.et_pb_row_8.et_pb_row{margin-bottom:25px!important}.et_pb_row_13.et_pb_row{margin-bottom:25px!important}.et_pb_button_2_wrapper{margin-top:18px!important}.et_pb_button_0_wrapper{margin-top:18px!important}.et_pb_button_1_wrapper{margin-top:18px!important}body #page-container .et_pb_section .et_pb_button_2{color:#ffffff!important;border-width:1px!important;border-color:#39c95e;border-radius:5px;letter-spacing:1px;font-size:1.25rem;font-family:'Montserrat',sans-serif!important;font-weight:600!important;text-transform:uppercase!important;background-color:#39c95e}body #page-container .et_pb_section .et_pb_button_0{color:#ffffff!important;border-width:1px!important;border-color:#39c95e;border-radius:5px;letter-spacing:1px;font-size:1.25rem;font-family:'Montserrat',sans-serif!important;font-weight:600!important;text-transform:uppercase!important;background-color:#39c95e}body #page-container .et_pb_section .et_pb_button_1{color:#ffffff!important;border-width:1px!important;border-color:#39c95e;border-radius:5px;letter-spacing:1px;font-size:1.25rem;font-family:'Montserrat',sans-serif!important;font-weight:600!important;text-transform:uppercase!important;background-color:#39c95e}body #page-container .et_pb_section .et_pb_button_2:hover{color:#ffffff!important;border-color:#39c95e!important;letter-spacing:2px!important;background-image:initial;background-color:#39c95e}body #page-container .et_pb_section .et_pb_button_1:hover{color:#ffffff!important;border-color:#39c95e!important;letter-spacing:2px!important;background-image:initial;background-color:#39c95e}body #page-container .et_pb_section .et_pb_button_0:hover{color:#ffffff!important;border-color:#39c95e!important;letter-spacing:2px!important;background-image:initial;background-color:#39c95e}body #page-container .et_pb_section .et_pb_button_0:hover:after{margin-left:.3em;left:auto;margin-left:.3em;opacity:1}body #page-container .et_pb_section .et_pb_button_2:hover:after{margin-left:.3em;left:auto;margin-left:.3em;opacity:1}body #page-container .et_pb_section .et_pb_button_1:hover:after{margin-left:.3em;left:auto;margin-left:.3em;opacity:1}body #page-container .et_pb_section .et_pb_button_1:after{line-height:inherit;font-size:inherit!important;margin-left:-1em;left:auto}body #page-container .et_pb_section .et_pb_button_0:after{line-height:inherit;font-size:inherit!important;margin-left:-1em;left:auto}body #page-container .et_pb_section .et_pb_button_2:after{line-height:inherit;font-size:inherit!important;margin-left:-1em;left:auto}.et_pb_button_1{transition:color 300ms ease 0ms,background-color 300ms ease 0ms,border 300ms ease 0ms,letter-spacing 300ms ease 0ms}.et_pb_button_2{transition:color 300ms ease 0ms,background-color 300ms ease 0ms,border 300ms ease 0ms,letter-spacing 300ms ease 0ms}.et_pb_button_0{transition:color 300ms ease 0ms,background-color 300ms ease 0ms,border 300ms ease 0ms,letter-spacing 300ms ease 0ms}.et_pb_button_0,.et_pb_button_0:after{transition:all 300ms ease 0ms}.et_pb_button_2,.et_pb_button_2:after{transition:all 300ms ease 0ms}.et_pb_button_1,.et_pb_button_1:after{transition:all 300ms ease 0ms}.et_pb_section_7.et_pb_section{padding-bottom:61px;margin-bottom:-54px}.et_pb_section_11.et_pb_section{padding-bottom:61px;margin-bottom:-54px}.et_pb_section_3.et_pb_section{padding-bottom:61px;margin-bottom:-54px}.et_pb_section_7{width:100%}.et_pb_team_member_2{width:100%}.et_pb_team_member_1{width:100%}.et_pb_team_member_0{width:100%}.et_pb_section_3{width:100%}.et_pb_section_11{width:100%}.et_pb_section_7.section_has_divider.et_pb_bottom_divider .et_pb_bottom_inside_divider{background-image:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDBweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNlMDk5MDAiPjxwYXRoIGQ9Ik04NTMuODkzLDg2Ljk5OGMtMzguODU5LDAtNTguODExLTE2LjQ1NS03Ny45NTYtMzUuMDUxYzE4LjI5NS0xMC41MzYsNDAuODkxLTE4LjI3Niw3My4zNzgtMTguMjc2IGMzOC42ODUsMCw2NC4xMzIsMTIuNTY0LDg1LjQ4OSwyOC4zNDdDOTE2LjE5Miw3Mi4wMTIsOTAwLjgsODYuOTk4LDg1My44OTMsODYuOTk4eiBNNTI2LjI2NSw4MC45NDUgYy02LjUxNy0wLjU2Mi0xMy41OTktMC44NzktMjEuNDEtMC44NzljLTcwLjc5OSwwLTkxLjMzNywyNy4yMjktMTM0LjQzMywzNS42NjJjMTQuOTAxLDMuNzIsMzIuMTE4LDYuMDcsNTIuODk4LDYuMDcgQzQ3MC4xNzEsMTIxLjc5Nyw1MDAuMzQsMTAzLjQyMSw1MjYuMjY1LDgwLjk0NXoiIGZpbGwtb3BhY2l0eT0iLjMiLz48cGF0aCBkPSJNNjYzLjQ1OCwxMDkuNjcxYy02Ny4xMzcsMC04MC4zNDUtMjMuODI0LTEzNy4xOTMtMjguNzI2QzU2Ny4wODYsNDUuNTU1LDU5Ny4zODEsMCw2NjUuNjkxLDAgYzYxLjg1NywwLDg1LjM2OSwyNy43ODIsMTEwLjI0Niw1MS45NDdDNzM2Ljg4OCw3NC40MzQsNzE3LjQ1OSwxMDkuNjcxLDY2My40NTgsMTA5LjY3MXogTTIxNy42OCw5NC4xNjMgYzU1Ljk3MSwwLDYyLjUyNiwyNC4wMjYsMTI2LjMzNywyNC4wMjZjOS44NTgsMCwxOC41MDgtMC45MTYsMjYuNDA0LTIuNDYxYy01Ny4xODYtMTQuMjc4LTgwLjE3Ny00OC44MDgtMTM4LjY1OS00OC44MDggYy03Ny4wNjMsMC05OS45Niw0OC41NjktMTUxLjc1MSw0OC41NjljLTQwLjAwNiwwLTYwLjAwOC0xMi4yMDYtODAuMDExLTI5LjUwNnYxNi44MDZjMjAuMDAzLDEwLjg5MSw0MC4wMDUsMjEuNzgyLDgwLjAxMSwyMS43ODIgQzE2MC4wMTQsMTI0LjU3LDE1OC42MDgsOTQuMTYzLDIxNy42OCw5NC4xNjN6IE0xMjAwLjExMiw0Ni4yOTJjLTU3LjQ5MywwLTU2LjkzNSw0Ni41OTUtMTE1LjAxNSw0Ni41OTUgYy01My42MTIsMC01OS43NTUtMzkuNjE4LTExNS42MDItMzkuNjE4Yy0xNS4yNjcsMC0yNS4zODEsMy43NTEtMzQuNjksOC43NDljMzYuMDk2LDI2LjY3NSw2MC41MDMsNjIuNTUyLDExNy4zNDIsNjIuNTUyIGM2OS4yNDksMCw3NS45NTEtNDMuNTU5LDE0Ny45NjQtNDMuNTU5YzM5LjgwNCwwLDU5Ljk4NiwxMC45NDMsNzkuODg4LDIxLjc3N1Y4NS45ODIgQzEyNjAuMDk3LDY4Ljc3MSwxMjM5LjkxNiw0Ni4yOTIsMTIwMC4xMTIsNDYuMjkyeiIgZmlsbC1vcGFjaXR5PSIuNSIvPjxwYXRoIGQ9Ik0xMDUyLjE0NywxMjQuNTdjLTU2Ljg0LDAtODEuMjQ3LTM1Ljg3Ni0xMTcuMzQyLTYyLjU1MmMtMTguNjEzLDkuOTk0LTM0LjAwNSwyNC45OC04MC45MTIsMjQuOTggYy0zOC44NTksMC01OC44MTEtMTYuNDU1LTc3Ljk1Ni0zNS4wNTFjLTM5LjA1LDIyLjQ4Ny01OC40NzksNTcuNzI0LTExMi40OCw1Ny43MjRjLTY3LjEzNywwLTgwLjM0NS0yMy44MjQtMTM3LjE5My0yOC43MjYgYy0yNS45MjUsMjIuNDc1LTU2LjA5Myw0MC44NTItMTAyLjk0Niw0MC44NTJjLTIwLjc3OSwwLTM3Ljk5Ni0yLjM0OS01Mi44OTgtNi4wN2MtNy44OTUsMS41NDUtMTYuNTQ2LDIuNDYxLTI2LjQwNCwyLjQ2MSBjLTYzLjgxMSwwLTcwLjM2Ni0yNC4wMjYtMTI2LjMzNy0yNC4wMjZjLTU5LjA3MiwwLTU3LjY2NSwzMC40MDctMTM3LjY2OSwzMC40MDdjLTQwLjAwNiwwLTYwLjAwOC0xMC44OTEtODAuMDExLTIxLjc4MlYxNDBoMTI4MCB2LTM3LjIxMmMtMTkuOTAzLTEwLjgzNS00MC4wODQtMjEuNzc3LTc5Ljg4OC0yMS43NzdDMTEyOC4wOTgsODEuMDExLDExMjEuMzk3LDEyNC41NywxMDUyLjE0NywxMjQuNTd6Ii8+PC9nPjwvc3ZnPg==);background-size:100% 100px;bottom:0;height:100px;z-index:1}.et_pb_section_3.section_has_divider.et_pb_bottom_divider .et_pb_bottom_inside_divider{background-image:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDBweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNlMDk5MDAiPjxwYXRoIGQ9Ik04NTMuODkzLDg2Ljk5OGMtMzguODU5LDAtNTguODExLTE2LjQ1NS03Ny45NTYtMzUuMDUxYzE4LjI5NS0xMC41MzYsNDAuODkxLTE4LjI3Niw3My4zNzgtMTguMjc2IGMzOC42ODUsMCw2NC4xMzIsMTIuNTY0LDg1LjQ4OSwyOC4zNDdDOTE2LjE5Miw3Mi4wMTIsOTAwLjgsODYuOTk4LDg1My44OTMsODYuOTk4eiBNNTI2LjI2NSw4MC45NDUgYy02LjUxNy0wLjU2Mi0xMy41OTktMC44NzktMjEuNDEtMC44NzljLTcwLjc5OSwwLTkxLjMzNywyNy4yMjktMTM0LjQzMywzNS42NjJjMTQuOTAxLDMuNzIsMzIuMTE4LDYuMDcsNTIuODk4LDYuMDcgQzQ3MC4xNzEsMTIxLjc5Nyw1MDAuMzQsMTAzLjQyMSw1MjYuMjY1LDgwLjk0NXoiIGZpbGwtb3BhY2l0eT0iLjMiLz48cGF0aCBkPSJNNjYzLjQ1OCwxMDkuNjcxYy02Ny4xMzcsMC04MC4zNDUtMjMuODI0LTEzNy4xOTMtMjguNzI2QzU2Ny4wODYsNDUuNTU1LDU5Ny4zODEsMCw2NjUuNjkxLDAgYzYxLjg1NywwLDg1LjM2OSwyNy43ODIsMTEwLjI0Niw1MS45NDdDNzM2Ljg4OCw3NC40MzQsNzE3LjQ1OSwxMDkuNjcxLDY2My40NTgsMTA5LjY3MXogTTIxNy42OCw5NC4xNjMgYzU1Ljk3MSwwLDYyLjUyNiwyNC4wMjYsMTI2LjMzNywyNC4wMjZjOS44NTgsMCwxOC41MDgtMC45MTYsMjYuNDA0LTIuNDYxYy01Ny4xODYtMTQuMjc4LTgwLjE3Ny00OC44MDgtMTM4LjY1OS00OC44MDggYy03Ny4wNjMsMC05OS45Niw0OC41NjktMTUxLjc1MSw0OC41NjljLTQwLjAwNiwwLTYwLjAwOC0xMi4yMDYtODAuMDExLTI5LjUwNnYxNi44MDZjMjAuMDAzLDEwLjg5MSw0MC4wMDUsMjEuNzgyLDgwLjAxMSwyMS43ODIgQzE2MC4wMTQsMTI0LjU3LDE1OC42MDgsOTQuMTYzLDIxNy42OCw5NC4xNjN6IE0xMjAwLjExMiw0Ni4yOTJjLTU3LjQ5MywwLTU2LjkzNSw0Ni41OTUtMTE1LjAxNSw0Ni41OTUgYy01My42MTIsMC01OS43NTUtMzkuNjE4LTExNS42MDItMzkuNjE4Yy0xNS4yNjcsMC0yNS4zODEsMy43NTEtMzQuNjksOC43NDljMzYuMDk2LDI2LjY3NSw2MC41MDMsNjIuNTUyLDExNy4zNDIsNjIuNTUyIGM2OS4yNDksMCw3NS45NTEtNDMuNTU5LDE0Ny45NjQtNDMuNTU5YzM5LjgwNCwwLDU5Ljk4NiwxMC45NDMsNzkuODg4LDIxLjc3N1Y4NS45ODIgQzEyNjAuMDk3LDY4Ljc3MSwxMjM5LjkxNiw0Ni4yOTIsMTIwMC4xMTIsNDYuMjkyeiIgZmlsbC1vcGFjaXR5PSIuNSIvPjxwYXRoIGQ9Ik0xMDUyLjE0NywxMjQuNTdjLTU2Ljg0LDAtODEuMjQ3LTM1Ljg3Ni0xMTcuMzQyLTYyLjU1MmMtMTguNjEzLDkuOTk0LTM0LjAwNSwyNC45OC04MC45MTIsMjQuOTggYy0zOC44NTksMC01OC44MTEtMTYuNDU1LTc3Ljk1Ni0zNS4wNTFjLTM5LjA1LDIyLjQ4Ny01OC40NzksNTcuNzI0LTExMi40OCw1Ny43MjRjLTY3LjEzNywwLTgwLjM0NS0yMy44MjQtMTM3LjE5My0yOC43MjYgYy0yNS45MjUsMjIuNDc1LTU2LjA5Myw0MC44NTItMTAyLjk0Niw0MC44NTJjLTIwLjc3OSwwLTM3Ljk5Ni0yLjM0OS01Mi44OTgtNi4wN2MtNy44OTUsMS41NDUtMTYuNTQ2LDIuNDYxLTI2LjQwNCwyLjQ2MSBjLTYzLjgxMSwwLTcwLjM2Ni0yNC4wMjYtMTI2LjMzNy0yNC4wMjZjLTU5LjA3MiwwLTU3LjY2NSwzMC40MDctMTM3LjY2OSwzMC40MDdjLTQwLjAwNiwwLTYwLjAwOC0xMC44OTEtODAuMDExLTIxLjc4MlYxNDBoMTI4MCB2LTM3LjIxMmMtMTkuOTAzLTEwLjgzNS00MC4wODQtMjEuNzc3LTc5Ljg4OC0yMS43NzdDMTEyOC4wOTgsODEuMDExLDExMjEuMzk3LDEyNC41NywxMDUyLjE0NywxMjQuNTd6Ii8+PC9nPjwvc3ZnPg==);background-size:100% 100px;bottom:0;height:100px;z-index:1}.et_pb_section_11.section_has_divider.et_pb_bottom_divider .et_pb_bottom_inside_divider{background-image:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDBweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNlMDk5MDAiPjxwYXRoIGQ9Ik04NTMuODkzLDg2Ljk5OGMtMzguODU5LDAtNTguODExLTE2LjQ1NS03Ny45NTYtMzUuMDUxYzE4LjI5NS0xMC41MzYsNDAuODkxLTE4LjI3Niw3My4zNzgtMTguMjc2IGMzOC42ODUsMCw2NC4xMzIsMTIuNTY0LDg1LjQ4OSwyOC4zNDdDOTE2LjE5Miw3Mi4wMTIsOTAwLjgsODYuOTk4LDg1My44OTMsODYuOTk4eiBNNTI2LjI2NSw4MC45NDUgYy02LjUxNy0wLjU2Mi0xMy41OTktMC44NzktMjEuNDEtMC44NzljLTcwLjc5OSwwLTkxLjMzNywyNy4yMjktMTM0LjQzMywzNS42NjJjMTQuOTAxLDMuNzIsMzIuMTE4LDYuMDcsNTIuODk4LDYuMDcgQzQ3MC4xNzEsMTIxLjc5Nyw1MDAuMzQsMTAzLjQyMSw1MjYuMjY1LDgwLjk0NXoiIGZpbGwtb3BhY2l0eT0iLjMiLz48cGF0aCBkPSJNNjYzLjQ1OCwxMDkuNjcxYy02Ny4xMzcsMC04MC4zNDUtMjMuODI0LTEzNy4xOTMtMjguNzI2QzU2Ny4wODYsNDUuNTU1LDU5Ny4zODEsMCw2NjUuNjkxLDAgYzYxLjg1NywwLDg1LjM2OSwyNy43ODIsMTEwLjI0Niw1MS45NDdDNzM2Ljg4OCw3NC40MzQsNzE3LjQ1OSwxMDkuNjcxLDY2My40NTgsMTA5LjY3MXogTTIxNy42OCw5NC4xNjMgYzU1Ljk3MSwwLDYyLjUyNiwyNC4wMjYsMTI2LjMzNywyNC4wMjZjOS44NTgsMCwxOC41MDgtMC45MTYsMjYuNDA0LTIuNDYxYy01Ny4xODYtMTQuMjc4LTgwLjE3Ny00OC44MDgtMTM4LjY1OS00OC44MDggYy03Ny4wNjMsMC05OS45Niw0OC41NjktMTUxLjc1MSw0OC41NjljLTQwLjAwNiwwLTYwLjAwOC0xMi4yMDYtODAuMDExLTI5LjUwNnYxNi44MDZjMjAuMDAzLDEwLjg5MSw0MC4wMDUsMjEuNzgyLDgwLjAxMSwyMS43ODIgQzE2MC4wMTQsMTI0LjU3LDE1OC42MDgsOTQuMTYzLDIxNy42OCw5NC4xNjN6IE0xMjAwLjExMiw0Ni4yOTJjLTU3LjQ5MywwLTU2LjkzNSw0Ni41OTUtMTE1LjAxNSw0Ni41OTUgYy01My42MTIsMC01OS43NTUtMzkuNjE4LTExNS42MDItMzkuNjE4Yy0xNS4yNjcsMC0yNS4zODEsMy43NTEtMzQuNjksOC43NDljMzYuMDk2LDI2LjY3NSw2MC41MDMsNjIuNTUyLDExNy4zNDIsNjIuNTUyIGM2OS4yNDksMCw3NS45NTEtNDMuNTU5LDE0Ny45NjQtNDMuNTU5YzM5LjgwNCwwLDU5Ljk4NiwxMC45NDMsNzkuODg4LDIxLjc3N1Y4NS45ODIgQzEyNjAuMDk3LDY4Ljc3MSwxMjM5LjkxNiw0Ni4yOTIsMTIwMC4xMTIsNDYuMjkyeiIgZmlsbC1vcGFjaXR5PSIuNSIvPjxwYXRoIGQ9Ik0xMDUyLjE0NywxMjQuNTdjLTU2Ljg0LDAtODEuMjQ3LTM1Ljg3Ni0xMTcuMzQyLTYyLjU1MmMtMTguNjEzLDkuOTk0LTM0LjAwNSwyNC45OC04MC45MTIsMjQuOTggYy0zOC44NTksMC01OC44MTEtMTYuNDU1LTc3Ljk1Ni0zNS4wNTFjLTM5LjA1LDIyLjQ4Ny01OC40NzksNTcuNzI0LTExMi40OCw1Ny43MjRjLTY3LjEzNywwLTgwLjM0NS0yMy44MjQtMTM3LjE5My0yOC43MjYgYy0yNS45MjUsMjIuNDc1LTU2LjA5Myw0MC44NTItMTAyLjk0Niw0MC44NTJjLTIwLjc3OSwwLTM3Ljk5Ni0yLjM0OS01Mi44OTgtNi4wN2MtNy44OTUsMS41NDUtMTYuNTQ2LDIuNDYxLTI2LjQwNCwyLjQ2MSBjLTYzLjgxMSwwLTcwLjM2Ni0yNC4wMjYtMTI2LjMzNy0yNC4wMjZjLTU5LjA3MiwwLTU3LjY2NSwzMC40MDctMTM3LjY2OSwzMC40MDdjLTQwLjAwNiwwLTYwLjAwOC0xMC44OTEtODAuMDExLTIxLjc4MlYxNDBoMTI4MCB2LTM3LjIxMmMtMTkuOTAzLTEwLjgzNS00MC4wODQtMjEuNzc3LTc5Ljg4OC0yMS43NzdDMTEyOC4wOTgsODEuMDExLDExMjEuMzk3LDEyNC41NywxMDUyLjE0NywxMjQuNTd6Ii8+PC9nPjwvc3ZnPg==);background-size:100% 100px;bottom:0;height:100px;z-index:1}.et_pb_row_14.et_pb_row{margin-bottom:160px!important}.et_pb_row_9.et_pb_row{margin-bottom:160px!important}.et_pb_row_4.et_pb_row{margin-bottom:160px!important}.et_pb_team_member_0.et_pb_team_member h4,.et_pb_team_member_0.et_pb_team_member h1.et_pb_module_header,.et_pb_team_member_0.et_pb_team_member h2.et_pb_module_header,.et_pb_team_member_0.et_pb_team_member h3.et_pb_module_header,.et_pb_team_member_0.et_pb_team_member h5.et_pb_module_header,.et_pb_team_member_0.et_pb_team_member h6.et_pb_module_header{font-weight:600;font-size:23px}.et_pb_team_member_2.et_pb_team_member h4,.et_pb_team_member_2.et_pb_team_member h1.et_pb_module_header,.et_pb_team_member_2.et_pb_team_member h2.et_pb_module_header,.et_pb_team_member_2.et_pb_team_member h3.et_pb_module_header,.et_pb_team_member_2.et_pb_team_member h5.et_pb_module_header,.et_pb_team_member_2.et_pb_team_member h6.et_pb_module_header{font-weight:600;font-size:23px}.et_pb_team_member_1.et_pb_team_member h4,.et_pb_team_member_1.et_pb_team_member h1.et_pb_module_header,.et_pb_team_member_1.et_pb_team_member h2.et_pb_module_header,.et_pb_team_member_1.et_pb_team_member h3.et_pb_module_header,.et_pb_team_member_1.et_pb_team_member h5.et_pb_module_header,.et_pb_team_member_1.et_pb_team_member h6.et_pb_module_header{font-weight:600;font-size:23px}.et_pb_team_member_2.et_pb_team_member{font-size:18px;line-height:1.9em;margin-top:-15px!important}.et_pb_team_member_0.et_pb_team_member{font-size:18px;line-height:1.9em;margin-top:-15px!important}.et_pb_team_member_1.et_pb_team_member{font-size:18px;line-height:1.9em;margin-top:-15px!important}.et_pb_row_5.et_pb_row{padding-top:0px!important;padding-right:0px!important;padding-bottom:0px!important;padding-left:0px!important;margin-left:auto!important;margin-right:auto!important;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px}.et_pb_row_10.et_pb_row{padding-top:0px!important;padding-right:0px!important;padding-bottom:0px!important;padding-left:0px!important;margin-left:auto!important;margin-right:auto!important;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px}.et_pb_row_0.et_pb_row{padding-top:0px!important;padding-right:0px!important;padding-bottom:0px!important;padding-left:0px!important;margin-left:auto!important;margin-right:auto!important;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px}.et_pb_text_11.et_pb_module{margin-left:auto!important;margin-right:auto!important}.et_pb_text_12.et_pb_module{margin-left:auto!important;margin-right:auto!important}.et_pb_text_24.et_pb_module{margin-left:auto!important;margin-right:auto!important}.et_pb_image_3.et_pb_module{margin-left:auto!important;margin-right:auto!important}.et_pb_image_9.et_pb_module{margin-left:auto!important;margin-right:auto!important}.et_pb_text_21.et_pb_module{margin-left:auto!important;margin-right:auto!important}.et_pb_team_member_1.et_pb_team_member.et_pb_module{margin-left:auto!important;margin-right:auto!important}.et_pb_text_6.et_pb_module{margin-left:auto!important;margin-right:auto!important}.et_pb_image_8.et_pb_module{margin-left:auto!important;margin-right:auto!important}.et_pb_text_19.et_pb_module{margin-left:auto!important;margin-right:auto!important}.et_pb_text_5.et_pb_module{margin-left:auto!important;margin-right:auto!important}.et_pb_text_20.et_pb_module{margin-left:auto!important;margin-right:auto!important}.et_pb_image_14.et_pb_module{margin-left:auto!important;margin-right:auto!important}.et_pb_image_4.et_pb_module{margin-left:auto!important;margin-right:auto!important}.et_pb_text_4.et_pb_module{margin-left:auto!important;margin-right:auto!important}.et_pb_text_15.et_pb_module{margin-left:auto!important;margin-right:auto!important}.et_pb_image_15.et_pb_module{margin-left:auto!important;margin-right:auto!important}.et_pb_text_1.et_pb_module{margin-left:auto!important;margin-right:auto!important}.et_pb_text_3.et_pb_module{margin-left:auto!important;margin-right:auto!important}.et_pb_text_22.et_pb_module{margin-left:auto!important;margin-right:auto!important}.et_pb_image_16.et_pb_module{margin-left:auto!important;margin-right:auto!important}.et_pb_text_14.et_pb_module{margin-left:auto!important;margin-right:auto!important}.et_pb_team_member_0.et_pb_team_member.et_pb_module{margin-left:auto!important;margin-right:auto!important}.et_pb_image_2.et_pb_module{margin-left:auto!important;margin-right:auto!important}.et_pb_text_2.et_pb_module{margin-left:auto!important;margin-right:auto!important}.et_pb_image_10.et_pb_module{margin-left:auto!important;margin-right:auto!important}.et_pb_text_23.et_pb_module{margin-left:auto!important;margin-right:auto!important}.et_pb_text_13.et_pb_module{margin-left:auto!important;margin-right:auto!important}.et_pb_text_10.et_pb_module{margin-left:auto!important;margin-right:auto!important}.et_pb_team_member_2.et_pb_team_member.et_pb_module{margin-left:auto!important;margin-right:auto!important}@media only screen and (max-width:980px){.et_pb_text_18 h1{font-size:2rem}.et_pb_text_0 h1{font-size:2rem}.et_pb_text_9 h1{font-size:2rem}.et_pb_text_11 h2{font-size:26px}.et_pb_text_24 h2{font-size:26px}.et_pb_text_23 h2{font-size:26px}.et_pb_text_22 h2{font-size:26px}.et_pb_text_21 h2{font-size:26px}.et_pb_text_20 h2{font-size:26px}.et_pb_text_19 h2{font-size:26px}.et_pb_text_1 h2{font-size:26px}.et_pb_text_14 h2{font-size:26px}.et_pb_text_13 h2{font-size:26px}.et_pb_text_12 h2{font-size:26px}.et_pb_text_15 h2{font-size:26px}.et_pb_text_10 h2{font-size:26px}.et_pb_text_6 h2{font-size:26px}.et_pb_text_2 h2{font-size:26px}.et_pb_text_3 h2{font-size:26px}.et_pb_text_4 h2{font-size:26px}.et_pb_text_5 h2{font-size:26px}.et_pb_text_25 h2{font-size:1.5rem}.et_pb_text_7 h2{font-size:1.5rem}.et_pb_text_16 h2{font-size:1.5rem}.et_pb_text_17{font-size:1rem}.et_pb_text_8{font-size:1rem}.et_pb_text_26{font-size:1rem}body #page-container .et_pb_section .et_pb_button_1{font-size:1rem!important}body #page-container .et_pb_section .et_pb_button_0{font-size:1rem!important}body #page-container .et_pb_section .et_pb_button_2{font-size:1rem!important}body #page-container .et_pb_section .et_pb_button_1:after{line-height:inherit;font-size:inherit!important;margin-left:-1em;left:auto;display:inline-block;opacity:0;content:attr(data-icon);font-family:"ETmodules"!important}body #page-container .et_pb_section .et_pb_button_0:after{line-height:inherit;font-size:inherit!important;margin-left:-1em;left:auto;display:inline-block;opacity:0;content:attr(data-icon);font-family:"ETmodules"!important}body #page-container .et_pb_section .et_pb_button_2:after{line-height:inherit;font-size:inherit!important;margin-left:-1em;left:auto;display:inline-block;opacity:0;content:attr(data-icon);font-family:"ETmodules"!important}body #page-container .et_pb_section .et_pb_button_1:before{display:none}body #page-container .et_pb_section .et_pb_button_0:before{display:none}body #page-container .et_pb_section .et_pb_button_2:before{display:none}body #page-container .et_pb_section .et_pb_button_1:hover:after{margin-left:.3em;left:auto;margin-left:.3em;opacity:1}body #page-container .et_pb_section .et_pb_button_0:hover:after{margin-left:.3em;left:auto;margin-left:.3em;opacity:1}body #page-container .et_pb_section .et_pb_button_2:hover:after{margin-left:.3em;left:auto;margin-left:.3em;opacity:1}}@media only screen and (max-width:767px){.et_pb_text_1 h1{font-weight:600}.et_pb_text_15 h1{font-weight:600}.et_pb_text_14 h1{font-weight:600}.et_pb_text_19 h1{font-weight:600}.et_pb_text_13 h1{font-weight:600}.et_pb_text_12 h1{font-weight:600}.et_pb_text_20 h1{font-weight:600}.et_pb_text_11 h1{font-weight:600}.et_pb_text_10 h1{font-weight:600}.et_pb_text_21 h1{font-weight:600}.et_pb_text_22 h1{font-weight:600}.et_pb_text_6 h1{font-weight:600}.et_pb_text_23 h1{font-weight:600}.et_pb_text_5 h1{font-weight:600}.et_pb_text_4 h1{font-weight:600}.et_pb_text_24 h1{font-weight:600}.et_pb_text_3 h1{font-weight:600}.et_pb_text_2 h1{font-weight:600}.et_pb_text_22 h2{font-size:27px;color:#e88e20!important}.et_pb_text_21 h2{font-size:27px;color:#e88e20!important}.et_pb_text_20 h2{font-size:27px;color:#e88e20!important}.et_pb_text_23 h2{font-size:27px;color:#e88e20!important}.et_pb_text_19 h2{font-size:27px;color:#e88e20!important}.et_pb_text_24 h2{font-size:27px;color:#e88e20!important}.et_pb_text_15 h2{font-size:27px;color:#e88e20!important}.et_pb_text_13 h2{font-size:27px;color:#e88e20!important}.et_pb_text_14 h2{font-size:27px;color:#e88e20!important}.et_pb_text_3 h2{font-size:27px;color:#e88e20!important}.et_pb_text_1 h2{font-size:27px;color:#e88e20!important}.et_pb_text_12 h2{font-size:27px;color:#e88e20!important}.et_pb_text_11 h2{font-size:27px;color:#e88e20!important}.et_pb_text_10 h2{font-size:27px;color:#e88e20!important}.et_pb_text_2 h2{font-size:27px;color:#e88e20!important}.et_pb_text_6 h2{font-size:27px;color:#e88e20!important}.et_pb_text_5 h2{font-size:27px;color:#e88e20!important}.et_pb_text_4 h2{font-size:27px;color:#e88e20!important}body #page-container .et_pb_section .et_pb_button_2:after{line-height:inherit;font-size:inherit!important;margin-left:-1em;left:auto;display:inline-block;opacity:0;content:attr(data-icon);font-family:"ETmodules"!important}body #page-container .et_pb_section .et_pb_button_1:after{line-height:inherit;font-size:inherit!important;margin-left:-1em;left:auto;display:inline-block;opacity:0;content:attr(data-icon);font-family:"ETmodules"!important}body #page-container .et_pb_section .et_pb_button_0:after{line-height:inherit;font-size:inherit!important;margin-left:-1em;left:auto;display:inline-block;opacity:0;content:attr(data-icon);font-family:"ETmodules"!important}body #page-container .et_pb_section .et_pb_button_2:before{display:none}body #page-container .et_pb_section .et_pb_button_0:before{display:none}body #page-container .et_pb_section .et_pb_button_1:before{display:none}body #page-container .et_pb_section .et_pb_button_0:hover:after{margin-left:.3em;left:auto;margin-left:.3em;opacity:1}body #page-container .et_pb_section .et_pb_button_1:hover:after{margin-left:.3em;left:auto;margin-left:.3em;opacity:1}body #page-container .et_pb_section .et_pb_button_2:hover:after{margin-left:.3em;left:auto;margin-left:.3em;opacity:1}}</style> <script type="65e21cf3d61129d9d351874f-text/javascript">togglePlayableTags( '', 1000 );</script>
+<script type="65e21cf3d61129d9d351874f-text/javascript">window.lazyLoadOptions={elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}};window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://static.apro-software.com/wp-content/plugins/wp-rocket/assets/js/lazyload/16.1/lazyload.min.js" type="65e21cf3d61129d9d351874f-text/javascript"></script><script type="65e21cf3d61129d9d351874f-text/javascript">function lazyLoadThumb(e){var t='<img loading="lazy" data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360">',a='<div class="play">';return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.dataset.query.length?'':'&'+this.dataset.query;e.setAttribute("src",t.replace("ID",this.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.replaceChild(e,this)}document.addEventListener("DOMContentLoaded",function(){var e,t,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)e=document.createElement("div"),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query", a[t].dataset.query),e.setAttribute("data-src", a[t].dataset.src),e.innerHTML=lazyLoadThumb(a[t].dataset.id),e.onclick=lazyLoadYoutubeIframe,a[t].appendChild(e)});</script><script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="65e21cf3d61129d9d351874f-|49" defer></script></body>
+</html>
